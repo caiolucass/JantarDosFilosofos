@@ -8,9 +8,10 @@ import java.util.concurrent.Semaphore;
 
 public class App {
     public static void main(String[] args) throws InterruptedException {
-        int i; // contador
         int numeroFilosofos = 3; // quantidade de filosófos
 
+        System.out.println("======= Jantar dos Filósofos =======");
+        System.out.println("Bruno Leal\nCaio Lucas\nEduarda Santos\nEduardo André\nGustavo\nThiago Jesus");
         System.out.println("Digite o número de filosofos que estão na mesa: ");
         Scanner teclado = new Scanner(System.in);
         numeroFilosofos = teclado.nextInt();
@@ -63,6 +64,6 @@ public class App {
             System.out.println(
                     "Filosofo " + lista.get(j).getNome() + " pensou: " + lista.get(j).getVezesPensou() + " vez(es)");
         }
-
+        teclado.close();
     }
 }
